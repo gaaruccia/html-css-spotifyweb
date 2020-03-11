@@ -5,6 +5,9 @@
 }
 #contenitore-top{
   position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 144px;
   background-color: black;
   opacity: 0.7;
   width: 100%;
@@ -24,7 +27,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   align-self: flex-end;
-  padding-right: 12px;
+  padding-right: 24px;
 }
 #bottone button{
   border: 1px white solid;
@@ -43,9 +46,8 @@
 #corpo{
   height: calc(100vh - 120px);
   width: 100vw;
+  background: #141922;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 #playlist{
   height: calc(100vh - 120px);
@@ -55,13 +57,12 @@
   justify-content: center;
 }
 #album{
-  background: #141922;
-  padding-top: 144px;
   padding-left: 24px;
   height: 100%;
   width: 90vw;
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
 }
 #riproduttore{
   position: fixed;
