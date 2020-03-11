@@ -40,3 +40,36 @@
 #bottone button span{
   color: white;
 }
+#corpo{
+  height: calc(100vh - 120px);
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#playlist{
+  height: calc(100vh - 120px);
+  width: 10vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#album{
+  background: #141922;
+  padding-top: 144px;
+  padding-left: 24px;
+  height: 100%;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+#riproduttore{
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 99;
+}
