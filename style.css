@@ -50,7 +50,6 @@ ul{
   height: calc(100vh - 72px);
   width: 100%;
   background: #141922;
-  display: flex;
 }
 #playlist{
   height: calc(100vh - 72px);
@@ -123,5 +122,4 @@ h3{
   justify-content: flex-end;
   background-color: black;
   opacity: 0.7;
-  z-index: 99;
 }
