@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+ul{
+  list-style-type: none;
+}
 #contenitore-top{
   position: fixed;
   top: 0;
@@ -44,29 +47,77 @@
   color: white;
 }
 #corpo{
-  height: calc(100vh - 120px);
-  width: 100vw;
+  height: calc(100vh - 72px);
+  width: 100%;
   background: #141922;
   display: flex;
 }
 #playlist{
-  height: calc(100vh - 120px);
-  width: 10vw;
+  height: calc(100vh - 72px);
+  width: 192px;
   background-color: black;
+}
+.titoli{
+  padding-top: 96px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.titoli > ul{
+  padding-bottom: 16px;
+}
+.titoli > ul > li{
+  padding-left: 12px;
+  padding-top: 12px;
+}
+.titoli > ul > li:hover{
+  border-left: 1px solid green;
+  color: white;
+}
+.titoli > ul > li > img{
+  width: 25%;
+  padding-right: 12px;
+}
+span{
+  color: white;
+}
+h3{
+  color: white;
+  padding-left: 12px;
+}
+.cubo{
+  border: 1px white solid;
+  background-color: white;
+}
+.fa-plus{
+  font-size: 20px;
+  color: black;
+}
+.spazio{
+  padding-left: 12px;
+}
+#fine{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#fine li{
+  align-self: flex-end;
+}
+#fine img{
+  width: 20%;
+  padding-right: 12px;
 }
 #album{
   padding-left: 24px;
   height: 100%;
-  width: 90vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   overflow-y: scroll;
 }
 #riproduttore{
-  position: fixed;
-  height: 120px;
+  height: 72px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
