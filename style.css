@@ -50,17 +50,18 @@ ul{
   height: calc(100vh - 72px);
   width: 100%;
   background: #141922;
+  display: flex;
 }
 #playlist{
   height: calc(100vh - 72px);
   width: 192px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .titoli{
   padding-top: 96px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 .titoli > ul{
   padding-bottom: 16px;
@@ -95,13 +96,15 @@ h3{
 .spazio{
   padding-left: 12px;
 }
-#fine{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+#fine li:first-child{
+  border-bottom: 2px solid white;
+  padding-bottom: 12px;
+  padding-left: 12px;
 }
-#fine li{
-  align-self: flex-end;
+.spazio2{
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
 }
 #fine img{
   width: 20%;
@@ -110,16 +113,55 @@ h3{
 #album{
   padding-left: 24px;
   height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: calc(100% - 192px);
   overflow-y: scroll;
+}
+.titolo2{
+  padding-top: 96px;
+  text-align: center;
+}
+.titolo2 ul li{
+  flex-grow: 1;
+  color: white;
+  display: inline-block;
+  padding-right: 12px;
+  padding-bottom: 24px;
+}
+.titolo2 ul li:hover::after{
+  content: "";
+  display: block;
+  position: relative;
+  background: green;
+  height: 3px;
+  width: 40%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.conteiner{
+  display: flex;
+  justify-content: flex-start;
+}
+.album1{
+  flex-basis: calc(100% / 6);
+  flex-shrink: 1;
+  text-align: center;
+  padding-right: 24px;
+}
+.recenti h2{
+  color: white;
+  padding-bottom: 24px;
+}
+.album1 img{
+  width: 100%;
+  padding-bottom: 12px;
+
 }
 #riproduttore{
   height: 72px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: space-between;
   background-color: black;
   opacity: 0.7;
 }
